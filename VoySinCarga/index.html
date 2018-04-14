@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>Voy Sin Carga</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -47,16 +47,30 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contactenos</a>
             </li>
-            <li>
-              <a class="btn btn-primary btn-md js-scroll-trigger" href="#">Inicia Sesión</a>
-            </li>
-            <li>
-              <a class="btn btn-secundary btn-md js-scroll-trigger" href="#t">Registrese</a>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#" data-toggle="modal" data-target="#registro_usuario">Registrese</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+<div class="modal fade" id="registro_usuario" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Registrese</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="cliente.html">Cliente</a>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="conductor.html">Conductor</a>
+      </div>
+    </div>
+  </div>
+</div>
 
     <header class="masthead text-center text-white d-flex">
       <div class="container my-auto">
@@ -69,11 +83,35 @@
           </div>
           <div class="col-lg-8 mx-auto">
             <p class="text-faded mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#">Inisia Sesión</a>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#" data-toggle="modal" data-target="#iniciar_sesion">Inisia Sesión</a>
           </div>
         </div>
       </div>
     </header>
+
+    <div class="modal fade" id="iniciar_sesion" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Inicia Sesión</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+          </div>
+          <button type="submit" class="btn btn-primary">Acceder</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
     <section class="bg-primary" id="about">
       <div class="container">
@@ -91,39 +129,30 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Nuestros Servicios</h2>
+            <h2 class="section-heading">Forma de Trabajar</h2>
             <hr class="my-4">
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="col-lg-6 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Servicio 1 </h3>
+              <h3 class="mb-3">Cliente </h3>
+              <p class="text-muted mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <p class="text-muted mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               <p class="text-muted mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="col-lg-6 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Servicio 2</h3>
+              <h3 class="mb-3">Conductor</h3>
               <p class="text-muted mb-0">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Servicio 3</h3>
-              <p class="text-muted mb-0">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Servicio 4</h3>
-              <p class="text-muted mb-0">Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <p class="text-muted mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <p class="text-muted mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              
             </div>
           </div>
         </div>
@@ -134,7 +163,7 @@
     <section class="bg-dark text-white">
       <div class="container text-center">
         <h2 class="mb-4">Para empezar a disfrutar de nuestros servicios registrate con nosotros</h2>
-        <a class="btn btn-light btn-xl sr-button" href="#">Registrate Ahora</a>
+        <a class="btn btn-light btn-xl sr-button" href="#" data-toggle="modal" data-target="#registro_usuario">Registrate Ahora</a>
       </div>
     </section>
 
@@ -176,6 +205,13 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+
+
 
   </body>
 

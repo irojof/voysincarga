@@ -1,3 +1,16 @@
 #nosotros p,#services p, #infocontact {
 	text-align: justify;
 }
+
+.modal-body{
+	align-content: center;
+	text-align: center;
+}
+
+#btn_registro{
+	margin-left: 45%;
+}
+
+#footer{
+	text-align: center;
+}
