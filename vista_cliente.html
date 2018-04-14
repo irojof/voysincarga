@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Empresa de transporte de cargas en todo chile" content="">
+    <meta name="Focus Solution" content="">
+
+    <title>Voy Sin Carga</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Voy Sin Carga</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="#" data-target="#" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#solicitud">Solicitud de Envio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#conductor">Conductor Asignado</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#historico">Mis Envios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html">Cerrar Sesión</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>Voy Sin Carga</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#solicitud">Solicitud de Envio</a>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#historico">Historico Envios</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <section class="bg-primary" id="solicitud">
+      <div class="container">
+        <div class="row">
+          <div id="nosotros" class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Registra Tu Envio</h2>
+            <br>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputorigen">Origen de Carga</label>
+                <input id="pac-input" type="text" class="form-control" id="inputAddress" placeholder="Origen">
+                <div id="map"></div>
+              </div>
+            <div class="form-group col-md-6">
+              <label for="inputdestino">Destino</label>
+              <input id="pac-inpu" type="text" class="form-control" id="inputAddress" placeholder="Destino">
+              <div id="map"></div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="inputState">Tamaño Carga</label>
+              <select id="inputState" class="form-control">
+                <option selected>Seleccionar...</option>
+                <option>Pequeña</option>
+                <option>Mediana</option>
+                <option>Grande</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">Tipo Carga</label>
+              <select id="inputState" class="form-control">
+                <option selected>Seleccionar...</option>
+                <option>Oficina</option>
+                <option>Hogar</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">Categoria</label>
+              <select id="inputState" class="form-control">
+                <option selected>Seleccionar...</option>
+                <option>Fragil</option>
+                <option>Pesada</option>
+                <option>Ligera</option>
+              </select>
+            </div>
+          </div> 
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputState">Fecha de Busqueda</label>
+              <input id="recogida" type="date" class="form-control" >
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputState">Fecha de Entrega</label>
+              <input id="llegada" type="date" class="form-control" >
+            </div>
+          </div> 
+          <div class="form-group">
+            <label for="descripcion">Descripción de la Carga</label>
+            <textarea class="form-control" id="descripcion" rows="4"></textarea>
+          </div>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#">Terminar Solicitud</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="conductor">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Conductor Asignado</h2>
+            <hr class="my-4">
+            <p id="infocontact" class="mb-5 d-flex justify-content-center">Aun no tiene conductor y vehiculo asignado</p>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="bg-primary" id="solicitud">
+      <div class="container">
+        <div class="row">
+          <div id="nosotros" class="col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-white">Sigue Tu Cargar</h2>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425998.1489465631!2d-70.91002134055702!3d-33.47247275869924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C+Regi%C3%B3n+Metropolitana%2C+Chile!5e0!3m2!1ses-419!2sve!4v1523495036603" width="90%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="historico">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Todos Tus Envios</h2>
+            <hr class="my-4">
+            <ul class="list-group">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Morbi leo risus</li>
+              <li class="list-group-item">Porta ac consectetur ac</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer" class="container">
+      <hr>
+      <p>Copyright. Voy Sin Carga 2018 - Todos Los Derechos Reservados.</p>
+      <p><a class="link" href="https://www.linkedin.com/in/alberto-garcia-cerruto/" target="_blank"><strong>Desing, Development & Management by Alberto Garcia Cerruto</strong></a></p>
+    </div>
+
+    <script>
+      // This example adds a search box to a map, using the Google Place Autocomplete
+      // feature. People can enter geographical searches. The search box will return a
+      // pick list containing a mix of places and predicted search terms.
+
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+      function initAutocomplete() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -33.8688, lng: 151.2195},
+          zoom: 13,
+          mapTypeId: 'roadmap'
+        });
+
+        // Create the search box and link it to the UI element.
+        var input = document.getElementById('pac-input');
+        var searchBox = new google.maps.places.SearchBox(input);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+        // Create the search box and link it to the UI element.
+        var input = document.getElementById('pac-inpu');
+        var searchBox = new google.maps.places.SearchBox(input);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+        // Bias the SearchBox results towards current map's viewport.
+        map.addListener('bounds_changed', function() {
+          searchBox.setBounds(map.getBounds());
+        });
+
+        var markers = [];
+        // Listen for the event fired when the user selects a prediction and retrieve
+        // more details for that place.
+        searchBox.addListener('places_changed', function() {
+          var places = searchBox.getPlaces();
+
+          if (places.length == 0) {
+            return;
+          }
+
+          // Clear out the old markers.
+          markers.forEach(function(marker) {
+            marker.setMap(null);
+          });
+          markers = [];
+
+          // For each place, get the icon, name and location.
+          var bounds = new google.maps.LatLngBounds();
+          places.forEach(function(place) {
+            if (!place.geometry) {
+              console.log("Returned place contains no geometry");
+              return;
+            }
+            var icon = {
+              url: place.icon,
+              size: new google.maps.Size(71, 71),
+              origin: new google.maps.Point(0, 0),
+              anchor: new google.maps.Point(17, 34),
+              scaledSize: new google.maps.Size(25, 25)
+            };
+
+            // Create a marker for each place.
+            markers.push(new google.maps.Marker({
+              map: map,
+              icon: icon,
+              title: place.name,
+              position: place.geometry.location
+            }));
+
+            if (place.geometry.viewport) {
+              // Only geocodes have viewport.
+              bounds.union(place.geometry.viewport);
+            } else {
+              bounds.extend(place.geometry.location);
+            }
+          });
+          map.fitBounds(bounds);
+        });
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzmZbb8-Qsm9Wr-tL0UR9OCGsqOVoTBlQ&libraries=places&callback=initAutocomplete"
+         async defer></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+
+
+
+  </body>
+
+</html>
